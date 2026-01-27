@@ -25,18 +25,49 @@
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 960px;
     align-items: center;
+    margin: 0 auto;
+
 }
 
-.titel {
-    margin-right: auto;
+
+.menu {
+    display: flex;
+
+    li:last-child {
+        border-right: none;
+    }
 }
 
 .menu-item {
     list-style: none;
-    display: inline-block;
+    /* display: inline-block; */
     border-right: solid 1px black;
-    padding: 30px;
+    padding: 10px 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+
+
+    .title {
+        padding: 30px 10px;
+    }
+
+
+    .menu {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .menu-item {
+        padding: 10px;
+        border-bottom: solid 1px black;
+        border-right: none
+    }
+
 }
