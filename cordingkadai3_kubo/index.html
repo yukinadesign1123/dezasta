@@ -12,18 +12,18 @@
 
 
     <script>
-        let result = "0";
+        let result = 0;
         console.log(result);
 
-        let num = 0;
-        for (let i = 1; i < 10; i++) {
-            num = num + 1;
+        // let result = 0;
+        for (let i = 1; i <= 10; i++) {
+            result = result + i;
         }
-        alert(num);
+        // alert(num);
 
 
-        let num2 = 45;
-        if (num2 > 20) {
+        // let num2 = 45;
+        if (result >= 20) {
             console.log("20以上");
         } else {
             console.log("20未満")
