@@ -40,9 +40,104 @@ h1 img {
     font-family: "Alatsi", sans-serif;
 }
 
+/* スマホ版メニュー */
+.sp_nav,
+.sp_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .sp_btn {
+        display: block;
+        height: 27px;
+        cursor: pointer;
+        position: absolute;
+        top: 34px;
+        right: 27px;
+        z-index: 2;
+    }
+
+    .sp_btn span {
+        display: block;
+        width: 40.5px;
+        height: 2px;
+        border-radius: 2px;
+        background: #fff;
+        position: relative;
+        top: 13.5px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        width: 40.5px;
+        height: 2px;
+        border-radius: 2px;
+        background: #fff;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 13.5px;
+    }
+
+    .sp_btn span::after {
+        top: 13.5px
+    }
+
+    /* ばつ印 */
+    .sp_btn.open span {
+        background: transparent;
+    }
+
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    /* メニューの見た目 */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+
+    }
+
+    .sp_nav li {
+        color: #fff;
+        font-size: 36px;
+        font-family: "Alatsi", sans-serif;
+    }
+}
+
+
 .container {
-    max-width: 1440px;
-    width: 69%;
+    max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 144px;
 }
@@ -81,28 +176,76 @@ h2 div {
 
 }
 
-h3 {
+.copy {
     font-size: 32px;
-    font-weight: normal;
     margin-bottom: 16px;
     line-height: 1.5;
 }
 
 .ABOUT_content {
     margin-left: 40px;
+    padding-right: 10px;
 }
 
 .ABOUT_text {
     font-size: 14px;
     line-height: 1.8;
+    padding-right: 10px;
 }
 
 .ABOUT img {
     border-radius: 0 0 64px 0;
-    width: 440px;
+    width: 44%;
 }
 
 .menu_box {
     display: flex;
+}
 
+.menu_box ul {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+
+.menu_box img {
+    border-radius: 0 64px 0 0;
+    margin-bottom: 23px;
+}
+
+.MENU {
+    font-size: 26px;
+    font-family: "Diplomata SC", serif;
+    color: #D20202;
+}
+
+.MENU_text {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.gallery_pic {
+    max-width: 1440px;
+    display: flex;
+    width: 20%;
+    margin-bottom: 144px;
+}
+
+.EVENT_box {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    padding: 32px 0 32px 0;
+    border: 1px solid #4F270B;
+    background: #fff;
+
+}
+
+.EVENT_item {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 16px;
+    text-align: left;
 }

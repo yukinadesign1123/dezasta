@@ -13,6 +13,7 @@
     <title>DESIGN CAFE</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -28,6 +29,18 @@
             </h1>
             <nav class="pc_nav">
                 <ul>
+                    <li><a href="#"></a>ABOUT US</li>
+                    <li>MENU</li>
+                    <li>GALLERY</li>
+                    <li>EVENT</li>
+                    <li>ACCESS</li>
+                </ul>
+            </nav>
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
                     <li>ABOUT US</li>
                     <li>MENU</li>
                     <li>GALLERY</li>
@@ -41,19 +54,14 @@
 
 
     <main>
-        <div class="container">
-            <div class="text">
-                <p class="text-box1">Have a happy day From a cup of coffee.</p>
-                <div>
-                    <p class="text-box2">ハッピーに溢れる1日を<br>
-                        1杯のコーヒーから。</p>
-                    <div>
-                        <p class="text-box3">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-                            足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
-                    </div>
-                </div>
-            </div>
+        <div class="text">
+            <p class="text-box1">Have a happy day From a cup of coffee.</p>
+            <p class="text-box2">ハッピーに溢れる1日を<br>
+                1杯のコーヒーから。</p>
+            <p class="text-box3">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
         </div>
+
         <section class="container">
             <div class="ABOUT">
                 <img src="./images/pc_about-100.jpg" alt="ABOUT">
@@ -61,8 +69,8 @@
                     <h2>
                         <div>ABOUT US</div>
                     </h2>
-                    <h3>私たちが提供する<br>
-                        こだわりのコーヒー</h3>
+                    <p class="copy">私たちが提供する<br>
+                        こだわりのコーヒー</p>
                     <p class="ABOUT_text">
                         サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
                     </p>
@@ -74,21 +82,69 @@
             <h2>MENU</h2>
             <div class="menu_box">
                 <ul>
-                    <li> <img src="./images/pc_menu_drink-100.jpg" alt="DRINK"> </li>
-                    <li> <img src="./images/pc_menu_food-100.jpg" alt="FOOD"></li>
-                    <li> <img src="./images/pc_menu_sweets-100.jpg" alt="SWEET"></li>
+                    <li> <img src="./images/pc_menu_drink-100.jpg" alt="DRINK">
+                        <p class="MENU">MENU</p>
+                        <p class="MENU_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                    </li>
+                    <li> <img src="./images/pc_menu_food-100.jpg" alt="FOOD">
+                        <p class="MENU">FOOD</p>
+                        <p class="MENU_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                    </li>
+
+                    <li> <img src="./images/pc_menu_sweets-100.jpg" alt="SWEET">
+                        <p class="MENU">SWEETS</p>
+                        <p class="MENU_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                    </li>
                 </ul>
 
             </div>
+        </section>
 
+        <section>
+            <h2>GALLERY</h2>
+            <div class="gallery_pic">
+                <img src="./images/pc_gallary_01-100.jpg" alt="">
+                <img src="./images/pc_gallary_02-100.jpg" alt="">
+                <img src="./images/pc_gallary_03-100.jpg" alt="">
+                <img src="./images/pc_gallary_04-100.jpg" alt="">
+                <img src="./images/pc_gallary_05-100.jpg" alt="">
+            </div>
+        </section>
 
+        <section class="container">
+            <h2>EVENT</h2>
+            <div class="EVENT_box">
+                <ul>
+                    <li class="EVENT_item">
+                        <time datetime="2024.06.23">2024.06.23</time>
+                        <span>7月はイベント出店のため0/0お休みします</span>
+                    </li>
+                    <li class="EVENT_item">
+                        <time datetime="2024.06.23">2024.06.23</time>
+                        <span>春の新商品新発売。話題のあのブランドとコラボ</span>
+                    </li>
+                    <li class="EVENT_item">
+                        <time datetime="2024.02.06">2024.02.06</time>
+                        <span>コーヒーの日で30％OFFイベントを開催［3日間限定］</span>
+                    </li>
+                </ul>
 
+            </div>
         </section>
     </main>
     <footer>
 
     </footer>
 
+
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            })
+        })
+    </script>
 </body>
 
 </html>
