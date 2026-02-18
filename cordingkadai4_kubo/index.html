@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="header_slider">
             <div>
                 <img src="./images/pc_first-100.jpg" alt="店内の様子">
@@ -29,11 +29,11 @@
             </h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#"></a>ABOUT US</li>
-                    <li>MENU</li>
-                    <li>GALLERY</li>
-                    <li>EVENT</li>
-                    <li>ACCESS</li>
+                    <li><a href="#ABOUT">ABOUT US</a></li>
+                    <li><a href="#MENU">MENU</a></li>
+                    <li><a href="#GALLERY">GALLERY</a></li>
+                    <li><a href="#EVENT">EVENT</a></li>
+                    <li><a href="#ACCESS">ACCESS</a></li>
                 </ul>
             </nav>
             <div class="sp_btn">
@@ -62,45 +62,62 @@
                 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
         </div>
 
-        <section class="container">
-            <div class="ABOUT">
-                <img src="./images/pc_about-100.jpg" alt="ABOUT">
-                <div class="ABOUT_content">
-                    <h2>
-                        <div>ABOUT US</div>
-                    </h2>
-                    <p class="copy">私たちが提供する<br>
-                        こだわりのコーヒー</p>
-                    <p class="ABOUT_text">
-                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                    </p>
+        <section id="ABOUT">
+            <div class="container">
+
+                <div class="ABOUT">
+                    <img src="./images/pc_about-100.jpg" alt="ABOUT">
+                    <div class="ABOUT_content">
+                        <h2>
+                            <div>ABOUT US</div>
+                        </h2>
+                        <p class="copy">私たちが提供する<br>
+                            こだわりのコーヒー</p>
+                        <p class="ABOUT_text">
+                            サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container">
-            <h2>MENU</h2>
-            <div class="menu_box">
-                <ul>
-                    <li> <img src="./images/pc_menu_drink-100.jpg" alt="DRINK">
-                        <p class="MENU">MENU</p>
-                        <p class="MENU_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                    </li>
-                    <li> <img src="./images/pc_menu_food-100.jpg" alt="FOOD">
-                        <p class="MENU">FOOD</p>
-                        <p class="MENU_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                    </li>
+        <section id="MENU">
+            <div class="container">
 
-                    <li> <img src="./images/pc_menu_sweets-100.jpg" alt="SWEET">
-                        <p class="MENU">SWEETS</p>
-                        <p class="MENU_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
-                    </li>
-                </ul>
+                <h2>MENU</h2>
+                <div class="menu_box">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./images/pc_menu_drink-100.jpg" alt="DRINK">
+                                <p class="MENU">DRINK</p>
+                            </div>
+                            <p class="MENU_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
 
+                        </li>
+
+                        <li>
+                            <div>
+                                <img src="./images/pc_menu_food-100.jpg" alt="FOOD">
+                                <p class="MENU">FOOD</p>
+                            </div>
+                            <p class="MENU_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                        </li>
+
+                        <li>
+                            <div>
+                                <img src="./images/pc_menu_sweets-100.jpg" alt="SWEET">
+                                <p class="MENU">SWEETS</p>
+                            </div>
+                            <p class="MENU_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </section>
 
-        <section>
+        <section id="GALLERY">
             <h2>GALLERY</h2>
             <div class="gallery_pic">
                 <img src="./images/pc_gallary_01-100.jpg" alt="">
@@ -111,28 +128,67 @@
             </div>
         </section>
 
-        <section class="container">
-            <h2>EVENT</h2>
-            <div class="EVENT_box">
-                <ul>
-                    <li class="EVENT_item">
-                        <time datetime="2024.06.23">2024.06.23</time>
-                        <span>7月はイベント出店のため0/0お休みします</span>
-                    </li>
-                    <li class="EVENT_item">
-                        <time datetime="2024.06.23">2024.06.23</time>
-                        <span>春の新商品新発売。話題のあのブランドとコラボ</span>
-                    </li>
-                    <li class="EVENT_item">
-                        <time datetime="2024.02.06">2024.02.06</time>
-                        <span>コーヒーの日で30％OFFイベントを開催［3日間限定］</span>
-                    </li>
-                </ul>
+        <section id="EVENT">
+            <div class="container">
+                <h2>EVENT</h2>
+                <div class="EVENT_box">
+                    <ul>
+                        <li class="EVENT_item">
+                            <time datetime="2024.06.23">2024.06.23</time>
+                            <span>7月はイベント出店のため0/0お休みします</span>
+                        </li>
+                        <li class="EVENT_item">
+                            <time datetime="2024.06.23">2024.06.23</time>
+                            <span>春の新商品新発売。話題のあのブランドとコラボ</span>
+                        </li>
+                        <li class="EVENT_item">
+                            <time datetime="2024.02.06">2024.02.06</time>
+                            <span>コーヒーの日で30%OFFイベントを開催［3日間限定］</span>
+                        </li>
+                    </ul>
 
+                </div>
             </div>
         </section>
+
+        <section id="ACCESS">
+            <h2>ACCESS</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.565236366426!2d135.4297435760524!3d34.665681185090406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0d083d5e25d%3A0x3605fe25303252aa!2z44Om44OL44OQ44O844K144Or44O744K544K_44K444Kq44O744K444Oj44OR44Oz!5e0!3m2!1sja!2sjp!4v1771428529722!5m2!1sja!2sjp"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
-    <footer>
+
+    <footer id="footer">
+        <div class="footer">
+
+            <div class="footer_box">
+                <div>
+                    <h1>DESIGN CAFE</h1>
+                </div>
+                <ul>
+                    <li>
+                        <p>営業時間</p>
+                        <p>OPEN 18:00 / CLOSE 24:00</p>
+                    </li>
+
+                    <li>
+                        <p>住所</p>
+                        <p>〒150-0022</p>
+                        <p>東京都渋谷区東京南123デザインビルB1</p>
+                    </li>
+
+                    <li>
+                        <p>メール</p>
+                        <p>info@designcafe.tokyo</p>
+                    </li>
+                </ul>
+            </div>
+            <a href="#header">
+                <img src="./images/to_top@2x.png" alt="to PAGE TOP"></a>
+            <p>©2021 DESIGN CAFE</p>
+        </div>
 
     </footer>
 
