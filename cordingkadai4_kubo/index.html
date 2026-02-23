@@ -58,15 +58,23 @@
             <p class="text-box1">Have a happy day From a cup of coffee.</p>
             <p class="text-box2">ハッピーに溢れる1日を<br>
                 1杯のコーヒーから。</p>
-            <p class="text-box3">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+            <span class="text-box3">毎日を丁寧に大切に過ごしたい。</span>
+            <span class="text-box3">だからこそ一杯一杯丁寧にコーヒーを入れ</span><br>
+            <span class="text-box3">足を運んでくれるお客さんには落ち着く空間と</span>
+            <span class="text-box3">こだわりのコーヒーを提供したい。</span>
         </div>
 
         <section id="ABOUT">
             <div class="container">
 
                 <div class="ABOUT">
-                    <img src="./images/pc_about-100.jpg" alt="ABOUT">
+                    <div class="img_box">
+                        <picture>
+                            <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
+                            <img src="images/pc_about-100.jpg" alt="ABOUT">
+                        </picture>
+                    </div>
+
                     <div class="ABOUT_content">
                         <h2>
                             <div>ABOUT US</div>
@@ -89,7 +97,10 @@
                     <ul>
                         <li>
                             <div>
-                                <img src="./images/pc_menu_drink-100.jpg" alt="DRINK">
+                                <picture>
+                                    <source srcset="images/drink_sp@2x-100.jpg" media="(max-width: 767px)">
+                                    <img src="images/pc_menu_drink-100.jpg" alt="ABOUT">
+                                </picture>
                                 <p class="MENU">DRINK</p>
                             </div>
                             <p class="MENU_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -98,7 +109,10 @@
 
                         <li>
                             <div>
-                                <img src="./images/pc_menu_food-100.jpg" alt="FOOD">
+                                <picture>
+                                    <source srcset="images/food_sp@2x-100.jpg" media="(max-width: 767px)">
+                                    <img src="images/pc_menu_food-100.jpg" alt="ABOUT">
+                                </picture>
                                 <p class="MENU">FOOD</p>
                             </div>
                             <p class="MENU_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -106,7 +120,10 @@
 
                         <li>
                             <div>
-                                <img src="./images/pc_menu_sweets-100.jpg" alt="SWEET">
+                                <picture>
+                                    <source srcset="images/cake_sp@2x-100.jpg" media="(max-width: 767px)">
+                                    <img src="images/pc_menu_sweets-100.jpg" alt="ABOUT">
+                                </picture>
                                 <p class="MENU">SWEETS</p>
                             </div>
                             <p class="MENU_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
@@ -133,15 +150,15 @@
                 <h2>EVENT</h2>
                 <div class="EVENT_box">
                     <ul>
-                        <li class="EVENT_item">
+                        <li class="EVENT_item" style="max-width: 310px;">
                             <time datetime="2024.06.23">2024.06.23</time>
                             <span>7月はイベント出店のため0/0お休みします</span>
                         </li>
-                        <li class="EVENT_item">
+                        <li class="EVENT_item" style="max-width: 310px;">
                             <time datetime="2024.06.23">2024.06.23</time>
                             <span>春の新商品新発売。話題のあのブランドとコラボ</span>
                         </li>
-                        <li class="EVENT_item">
+                        <li class="EVENT_item" style="max-width: 310px;">
                             <time datetime="2024.02.06">2024.02.06</time>
                             <span>コーヒーの日で30%OFFイベントを開催［3日間限定］</span>
                         </li>
@@ -167,18 +184,18 @@
 
                 <ul>
                     <li>
-                        <p>営業時間</p>
+                        <p class="first-child">営業時間</p>
                         <p>OPEN 18:00 / CLOSE 24:00</p>
                     </li>
 
                     <li>
-                        <p>住所</p>
-                        <p>〒150-0022</p>
-                        <p>東京都渋谷区東京南123デザインビルB1</p>
+                        <p class="first-child">住所</p>
+                        <p>〒150-0022 <br>
+                            東京都渋谷区東京南123デザインビルB1</p>
                     </li>
 
                     <li>
-                        <p>メール</p>
+                        <p class="first-child">メール</p>
                         <p>info@designcafe.tokyo</p>
                     </li>
                 </ul>
