@@ -244,22 +244,32 @@
                 arrows: false,
             });
             $(".gallery_pic").slick({
-                dots: true, // ドットインジケーターの表示
+                // dots: true, // ドットインジケーターの表示
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
                 infinite: true, // スライドのループを有効にするか
-                slidesToShow: 2, // 表示するスライド数を設定
-                slidesToScroll: 1 // スクロールするスライド数を設定 
-            });
+                slidesToShow: 5, // 表示するスライド数を設定
+                slidesToScroll: 1, // スクロールするスライド数を設定 
 
-            // $(document).on('ready', function () {
-            //     $(".gallery_pic").slick({
-            //         dots: true, // ドットインジケーターの表示
-            //         infinite: true, // スライドのループを有効にするか
-            //         slidesToShow: 3, // 表示するスライド数を設定
-            //         slidesToScroll: 1 // スクロールするスライド数を設定 
+                responsive: [
+                    {
+                        breakpoint: 1110,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        }
+                    }, {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                ]
+            })
+        });
 
-            //     });
-            // });
-        })
 
 
     </script>
