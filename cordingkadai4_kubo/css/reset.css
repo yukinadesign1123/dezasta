@@ -21,7 +21,7 @@ li {
     /*デフォルトの文字色、font-familyを予め当てておく*/
     color: #4F270B;
     font-family: "Noto Sans JP", sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 a {

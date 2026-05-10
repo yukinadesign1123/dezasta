@@ -2,7 +2,7 @@
 
 body {
     background: #E9D9C0;
-    max-width: 1440px;
+    /* width: 100%; */
 }
 
 header {
@@ -85,11 +85,11 @@ h1 img {
     }
 
     .sp_btn span::before {
-        bottom: 13.5px;
+        bottom: 12px;
     }
 
     .sp_btn span::after {
-        top: 13.5px
+        top: 12px
     }
 
     /* ばつ印 */
@@ -250,7 +250,7 @@ h2 div {
 }
 
 .gallery_pic {
-    max-width: 1440px;
+    width: 100%;
     display: flex;
     /* width: 20%; */
     margin-bottom: 144px;
